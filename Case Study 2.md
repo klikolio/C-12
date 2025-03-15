@@ -69,7 +69,36 @@ Output: 21 # Hasil dari 1^2 + 2^2 + 4^2 = 1 + 4 + 16 = 21
 ```c
 #include <stdio.h>
 
-int main(){
+
+int sum_of_squares(int arr[], int n) {
+    if (n == 0) {
+        return 0;
+    }
+
+    if (arr[n - 1] < 0) {
+        return sum_of_squares(arr, n - 1);
+    }
+
+    return (arr[n - 1] * arr[n - 1]) + sum_of_squares(arr, n - 1);
+}
+
+int main() {
+    int test_cases;
+    scanf("%d", &test_cases);
+    
+    for (int t = 0; t < test_cases; t++) {
+        int n;
+        scanf("%d", &n);
+        
+        int numbers[n];
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &numbers[i]);
+        }
+        
+        int result = sum_of_squares(numbers, n);
+        printf("Output: %d\n", result);
+    }
+    
     return 0;
 }
 ```
