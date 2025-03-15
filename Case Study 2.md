@@ -106,11 +106,9 @@ int main() {
 ### Screenshot Program Perjalan
 
 
-
 > Test case yang digunakan adalah test case yang sama dengan contoh input dan output yang diberikan
 
 | Input//Output |
 | --- |
-| ![change-me](http://cdn.digilabdte.com/u/1.png) |
-| ![change-me](http://cdn.digilabdte.com/u/2.png) |
-| ![change-me](http://cdn.digilabdte.com/u/3.png) |
+| ![Test Case 1](https://raw.githubusercontent.com/klikolio/C-12/refs/heads/main/test-1.png) |
+| ![Test Case 2](https://raw.githubusercontent.com/klikolio/C-12/refs/heads/main/test-2.png) |
